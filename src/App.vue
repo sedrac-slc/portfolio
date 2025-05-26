@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import LeftSidebar from './components/LeftSidebar.vue';
 import SelectThema from './components/SelectThema.vue';
-import { Avatar, AvatarFallback, AvatarImage } from './components/ui/avatar';
 import { SidebarProvider } from './components/ui/sidebar';
 </script>
 
