@@ -42,7 +42,7 @@ const socials = [
     </SidebarHeader>
     <SidebarContent class="md:px-2 dark:bg-gray-900">
       <TitleBar text="Descrição" />
-      <div class="bg-slate-200 dark:bg-slate-800 p-2 rounded-md">
+      <div class="dark:bg-slate-800 p-2 rounded-md">
         Sou um desenvolvedor de software, trabalho como <strong>fulltack</strong> tanto pelas empresa e trabalho de
         freelancer.
       </div>
@@ -75,7 +75,6 @@ const socials = [
         <TextEnterprise text="Bitkabir" :period="1" role="Desenvolvedor Software (Efectivo)" desc="ano" />
       </div>
     </SidebarContent>
-
     <SidebarFooter>
     </SidebarFooter>
   </Sidebar>
