@@ -18,19 +18,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
     <LeftSidebar />
     <SidebarInset class="p-3 md:p-6 w-full bg-gray-200 dark:bg-slate-800">
       <Tabs default-value="home">
-        <TabsList>
-          <TabsTrigger value="home">
-            Apresentação
-          </TabsTrigger>
-          <TabsTrigger value="academic">
-            Formações
-          </TabsTrigger>          
-          <TabsTrigger value="career">
-            Carreira
-          </TabsTrigger>
-          <TabsTrigger value="project">
-            Projectos
-          </TabsTrigger>
+        <TabsList class="space-x-2">
+          <TabsTrigger value="home">Apresentação</TabsTrigger>
+          <TabsTrigger value="academic">Formações</TabsTrigger>          
+          <TabsTrigger value="career">Carreira</TabsTrigger>
+          <TabsTrigger value="project">Projectos</TabsTrigger>
         </TabsList>
         <TabsContent value="home">
           <HomeTab />

@@ -32,8 +32,8 @@ import ContactVue from '../ContactVue.vue';
   </section>
 
   <section class="flex flex-col md:flex-row w-full gap-5 md:gap-10">
-    <div class="bg-white rounded-xl p-3 w-full md:w-4/12">
-      <div class="mb-5 font-semibold text-gray-500 text-lg">Linguagens de programação</div>
+    <div class="bg-white dark:bg-slate-700 rounded-xl p-3 w-full md:w-4/12">
+      <div class="mb-5 font-semibold text-gray-500 dark:text-white text-lg">Linguagens de programação</div>
       <div class="space-y-3">
         <TextProgress text="PHP" :percetage="90" class-indicator="bg-blue-300" :img="Base64Img.PHP" />
         <TextProgress text="Javascript" :percetage="85" class-indicator="bg-blue-300" :img="Base64Img.JAVASCRIPT" />
@@ -43,8 +43,8 @@ import ContactVue from '../ContactVue.vue';
         <TextProgress text="Python" :percetage="20" class-indicator="bg-blue-300" :img="Base64Img.PYTHON" />
       </div>
     </div>
-    <div class="bg-white rounded-xl p-3 w-full md:w-4/12">
-      <div class="mb-5 font-semibold text-gray-500 text-lg">Frameworks</div>
+    <div class="bg-white dark:bg-slate-700 rounded-xl p-3 w-full md:w-4/12">
+      <div class="mb-5 font-semibold text-gray-500 dark:text-white text-lg">Frameworks</div>
       <div class="space-y-3">
         <TextProgress text="Laravel" :percetage="95" class-indicator="bg-green-300" :img="Base64Img.LARAVEL" />
         <TextProgress text="Flutter" :percetage="90" class-indicator="bg-green-300" :img="Base64Img.FLUTTER" />
@@ -56,8 +56,8 @@ import ContactVue from '../ContactVue.vue';
         <TextProgress text="Django" :percetage="50" class-indicator="bg-green-300" :img="Base64Img.DJANGO" />
       </div>
     </div>
-    <div class="bg-white rounded-xl p-3 w-full md:w-4/12">
-      <div class="mb-5 font-semibold text-gray-500 text-lg">Experiência de trabalho</div>
+    <div class="bg-white dark:bg-slate-700 rounded-xl p-3 w-full md:w-4/12">
+      <div class="mb-5 font-semibold text-gray-500 dark:text-white text-lg">Experiência de trabalho</div>
       <TextEnterprise text="Reitoria da Universidade Katyvala Bwila" :period="6" role="Técnico de TI (Estagio)"
         desc="meses" />
       <TextEnterprise text="Grupo Queiros Saldanha" :period="2" role="Desenvolvedor Software (Efectivo)" desc="anos" />
