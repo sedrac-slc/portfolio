@@ -13,8 +13,8 @@ const socials = [
 ];
 </script>
 <template>
-    <section class="flex gap-3 md:gap-6 mt-1 dark:bg-slate-700 dark:rounded-2xl dark:px-2 dark:py-1 dark:mt-2">
-        <div v-for="item in socials" :key="item.name" class="flex flex-col items-center justify-center space-y-1">
+    <section class="flex gap-3 md:gap-8 lg:gap-14 mt-1 dark:bg-slate-700 dark:rounded-2xl dark:px-2 dark:py-1 dark:mt-2">
+        <div v-for="item in socials" :key="item.name" class="flex flex-col items-center justify-center space-y-1 cursor-pointer">
             <img class="h-10 w-10" :src="item.icon" />
         </div>
     </section>
