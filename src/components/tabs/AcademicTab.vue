@@ -8,6 +8,8 @@ import {
     CardTitle,
 } from '@/components/ui/card';
 import TextInfo from '../TextInfo.vue';
+import Container from '../Container.vue';
+import ContainerTileItem from '../ContainerTileItem.vue';
 
 const items = [
     { name: "Cinfotec", course: "Informática na Óptica do utilizador", period: "2016-01-18 à 2016-02-09", img: '/cinfotec.png' },
@@ -17,27 +19,20 @@ const items = [
 </script>
 <template>
     <section class="flex flex-col gap-3 md:gap-10">
-        <div
-            class="flex flex-col md:flex-row gap-3 md:gap-8 w-full items-center mt-4 bg-blue-50 dark:bg-slate-700 rounded-2xl p-3 md:p-5">
-            <div class="w-full md:w-4/6">
-                <div>
-                    <div class="font-semibold text-xl">Ensino superior</div>
-                    <div class="mt-3">
-                        Realizei o ensino superior em <span class="italic font-semibold">Ciências da Computação</span>
-                        pela <span class="italic font-semibold">Universidade Katyvala Bwila</span>,
-                        localizada em Benguela, Angola. Durante o curso, estudei inicialmente no município de Benguela,
-                        com as atividades atualmente concentradas na Catumbela, dentro da mesma província.
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <div class="font-semibold text-xl">Percurso como estudante</div>
-                    <div class="mt-3">
-                        Meu percurso acadêmico foi marcado por dedicação e desempenho de destaque. Em todos os anos,
-                        estive entre os melhores alunos da instituição e participei ativamente de diversas atividades
-                        acadêmicas e extracurriculares, representado a instituição em concursos locais, províncias e
-                        nacionais que podem ser sem <span class="italic font-semibold">"carreira"</span>.
-                    </div>
-                </div>
+        <Container>
+            <div class="w-full md:w-4/6 space-y-2 md:space-y-5">
+                <ContainerTileItem title="Ensino superior">
+                    Realizei o ensino superior em <span class="italic font-semibold">Ciências da Computação</span>
+                    pela <span class="italic font-semibold">Universidade Katyvala Bwila</span>,
+                    localizada em Benguela, Angola. Durante o curso, estudei inicialmente no município de Benguela,
+                    com as atividades atualmente concentradas na Catumbela, dentro da mesma província.
+                </ContainerTileItem>
+                <ContainerTileItem title="Percurso como estudante">
+                    Meu percurso acadêmico foi marcado por dedicação e desempenho de destaque. Em todos os anos,
+                    estive entre os melhores alunos da instituição e participei ativamente de diversas atividades
+                    acadêmicas e extracurriculares, representado a instituição em concursos locais, províncias e
+                    nacionais que podem ser lidos <span class="italic font-semibold">"carreira"</span>.
+                </ContainerTileItem>
             </div>
             <div class="w-full md:w-2/6">
                 <Card class="shadow">
@@ -66,17 +61,13 @@ const items = [
                     </CardFooter>
                 </Card>
             </div>
-        </div>
-        <div
-            class="flex flex-col md:flex-row gap-3 md:gap-8 w-full items-center mt-4 bg-blue-50 dark:bg-slate-700 rounded-2xl p-3 md:p-5">
-            <div class="w-full md:w-2/6">
-                <div class="font-semibold text-xl">Ensino técnico profissional</div>
-                <div class="mt-3">
-                    Realizei alguns cursos profissionais com o objetivo de adquirir conhecimentos técnicos específicos
-                    na área em que desejava atuar, visando tanto o aprimoramento pessoal quanto a preparação para o
-                    mercado de trabalho.
-                </div>
-            </div>
+        </Container>
+        <Container>
+            <ContainerTileItem class="md:w-2/6" title="Ensino técnico profissional">
+                Realizei alguns cursos profissionais com o objetivo de adquirir conhecimentos técnicos específicos
+                na área em que desejava atuar, visando tanto o aprimoramento pessoal quanto a preparação para o
+                mercado de trabalho.
+            </ContainerTileItem>
             <div class="w-full md:w-4/6 flex flex-col gap-3 md:flex-row">
                 <Card class="shadow w-full md:w-1/2" v-for="item in items">
                     <CardHeader class="flex flex-col justify-center items-center">
@@ -94,6 +85,6 @@ const items = [
                     </CardContent>
                 </Card>
             </div>
-        </div>
+        </Container>
     </section>
 </template>
