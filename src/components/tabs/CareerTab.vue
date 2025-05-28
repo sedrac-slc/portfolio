@@ -26,6 +26,7 @@ const contestAOCP = [
 
 </script>
 <template>
+    
     <section class="flex flex-col md:flex-row gap-2 md:gap-10 items-center">
         <div class="mt-4 md:mt-5">
             <ContainerTileItem class="text-center" title="Concurso de Campeonato de programação (IP-UKB)">
@@ -54,8 +55,8 @@ const contestAOCP = [
                                 <img :src="item" alt="Image" class="w-35 h-35 rounded-2xl border border-gray-800" />
                             </div>
                         </CarouselItem>
-                        <CarouselPrevious class="hidden md:block"/>
-                        <CarouselNext class="hidden md:block"/>
+                        <CarouselPrevious class="hidden md:block" />
+                        <CarouselNext class="hidden md:block" />
                     </CarouselContent>
                 </Carousel>
             </div>
@@ -88,13 +89,14 @@ const contestAOCP = [
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center md:gap-10">
+    <section class="flex flex-col w-full items-center justify-center md:gap-10 px-0 mx-0">
         <div class="flex flex-col justify-center md:flex-row gap-2 md:gap-10 items-center">
-            <div class="w-5/6 p-2 md:w-full md:p-0">
+            <div class="w-80">
                 <ContainerTileItem class="text-center" title="Concurso Nacional de programação (AOCPC)">
                     AOCPC o concurso nacional de programação que um programa da organização ICPC que realizam concursos
                     de programação na entre as universidades de um determinado território começando do local (na própria
-                    instituição), nacional (entre a universidades de um país), internacional (representação de várias universidade em
+                    instituição), nacional (entre a universidades de um país), internacional (representação de várias
+                    universidade em
                     todo mundo).
                 </ContainerTileItem>
                 <div class="flex flex-wrap justify-center items-center gap-3 mt-3 md:gap-8 md:mt-8">
@@ -118,11 +120,11 @@ const contestAOCP = [
                 <CarouselContent>
                     <CarouselItem v-for="item in imgsAOCP" :key="item" class="basis-1/2 md:basis-1/2 lg:basis-1/4">
                         <div class="p-0 cursor-pointer" v-viewer>
-                            <img :src="item" alt="Image" class="w-45 h-45 rounded-2xl border border-gray-800" />
+                            <img :src="item" alt="Image" class="w-40 h-40 md:w-45 md:h-45 rounded-2xl border border-gray-800" />
                         </div>
                     </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious/>
+                <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
         </div>
