@@ -12,19 +12,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 <template>
   <!-- :style="{'--sidebar-width': '350px',}" -->
-  <nav class="bg-green-300 dark:bg-slate-700 dark:rounded-xl md:bg-transparent md:absolute md:right-2 top-3 p-2 flex gap-4 items-center">
-    <SelectLang/>
+  <nav class="bg-green-300 dark:bg-slate-700 dark:rounded-xl md:bg-transparent md:absolute md:right-10 top-3 p-2 flex gap-4 items-center">
     <SelectThema />
+    <SelectLang/>
   </nav>
   <SidebarProvider class="dark:bg-gray-900" :style="{ '--sidebar-width': '355px', }">
     <LeftSidebar />
     <SidebarInset class="p-3 md:p-6 w-full bg-gray-200 dark:bg-slate-800">
       <Tabs default-value="home">
         <TabsList class="space-x-2 flex-wrap">
-          <TabsTrigger value="home">Apresentação</TabsTrigger>
-          <TabsTrigger value="academic">Formações</TabsTrigger>          
-          <TabsTrigger value="career">Carreira</TabsTrigger>
-          <TabsTrigger value="project">Projectos</TabsTrigger>
+          <TabsTrigger value="home">{{ $t('tabs.presentation') }}</TabsTrigger>
+          <TabsTrigger value="academic">{{ $t('tabs.education') }}</TabsTrigger>          
+          <TabsTrigger value="career">{{ $t('tabs.career') }}</TabsTrigger>
+          <TabsTrigger value="project">{{ $t('tabs.project') }}</TabsTrigger>
         </TabsList>
         <TabsContent value="home" class="mt-5 md:mt-0 mx-0 px-0">
           <HomeTab />

@@ -16,9 +16,9 @@ import ContactVue from '../ContactVue.vue';
         {{ $t('homeTab.describe') }}
       </div>
       <div class="flex gap-2 md:gap-5 lg:gap-10 flex-wrap justify-center mt-3">
-        <ContactVue text="Telefone" value="+244936269780" class="bg-blue-300" />
-        <ContactVue text="Email" value="slcsedrac@gmail" class="bg-red-300" />
-        <ContactVue text="Whatsapp" value="+244936269780" class="bg-green-300"/>
+        <ContactVue :text="$t('homeTab.phone')" value="+244936269780" class="bg-blue-300" />
+        <ContactVue :text="$t('homeTab.email')" value="slcsedrac@gmail" class="bg-red-300" />
+        <ContactVue :text="$t('homeTab.whatsapp')" value="+244936269780" class="bg-green-300"/>
       </div>
       <div class="mt-4 md:mt-10">
           <SocialMedia />
@@ -31,7 +31,7 @@ import ContactVue from '../ContactVue.vue';
 
   <section class="flex flex-col md:flex-row w-full gap-5 md:gap-10">
     <div class="bg-white dark:bg-slate-700 rounded-xl p-3 w-full md:w-4/12">
-      <div class="mb-5 font-semibold text-gray-500 dark:text-white text-lg">Linguagens de programação</div>
+      <div class="mb-5 font-semibold text-gray-500 dark:text-white text-lg">{{ $t('homeTab.programmingLanguages') }}</div>
       <div class="space-y-3">
         <TextProgress text="PHP" :percetage="90" class-indicator="bg-blue-300" :img="Base64Img.PHP" />
         <TextProgress text="Javascript" :percetage="85" class-indicator="bg-blue-300" :img="Base64Img.JAVASCRIPT" />
@@ -55,12 +55,11 @@ import ContactVue from '../ContactVue.vue';
       </div>
     </div>
     <div class="bg-white dark:bg-slate-700 rounded-xl p-3 w-full md:w-4/12">
-      <div class="mb-5 font-semibold text-gray-500 dark:text-white text-lg">Experiência de trabalho</div>
-      <TextEnterprise text="Reitoria da Universidade Katyvala Bwila" :period="6" role="Técnico de TI (Estagio)"
-        desc="meses" />
-      <TextEnterprise text="Grupo Queiros Saldanha" :period="2" role="Desenvolvedor Software (Efectivo)" desc="anos" />
-      <TextEnterprise text="Luzkabir" :period="6" role="Desenvolvedor Software (Estagio)" desc="meses" />
-      <TextEnterprise text="Bitkabir" :period="1" role="Desenvolvedor Software (Efectivo)" desc="ano" />
+      <div class="mb-5 font-semibold text-gray-500 dark:text-white text-lg">{{ $t('homeTab.workExperience') }}</div>
+      <TextEnterprise :text="$t('homeTab.rectorateUkb')" :role="$t('homeTab.traineeIt')" :desc="$t('homeTab.months6')" />
+      <TextEnterprise :text="$t('homeTab.queirosSaldanhaGroup')" :role="$t('homeTab.softwareDeveloperPermanent')" :desc="$t('homeTab.years2')" />
+      <TextEnterprise text="Luzkabir" :role="$t('homeTab.softwareDeveloperTrainee')" :desc="$t('homeTab.months6')" />
+      <TextEnterprise text="Bitkabir" :role="$t('homeTab.softwareDeveloperPermanent')" :desc="$t('homeTab.year1')" />
     </div>
   </section>
 </template>

@@ -2,7 +2,6 @@
 
 const props = defineProps({
     text: String,
-    period: Number,
     desc: String,
     role: String,
 });
@@ -13,10 +12,7 @@ const props = defineProps({
             <div class="flex gap-1 items-center">
                 <div>{{ props.text }}</div>
             </div>
-            <div class="font-semibold flex gap-1">
-                <div>{{ props.period }}</div>
-                <div>{{ props.desc }}</div>
-            </div>
+            <div class="font-semibold">{{ props.desc }} </div>
         </div>
         <div class="flex gap-1 items-center">
             <div class="text-gray-500">{{ props.role }}</div>
