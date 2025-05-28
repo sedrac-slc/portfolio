@@ -13,9 +13,7 @@ import ContactVue from '../ContactVue.vue';
         Sedrac Lucas Calupeteca
       </div>
       <div class="w-full mt-3 md:mt-6 text-lg md:indent-10 md:text-center">
-        Sou desenvolvedor fullstack com mais de seis anos de experiência em ambientes corporativos e projetos como
-        freelancer de forma profissional criando software para web, mobile e desktop com diversas linguagens e
-        frameworks.
+        {{ $t('homeTab.describe') }}
       </div>
       <div class="flex gap-2 md:gap-5 lg:gap-10 flex-wrap justify-center mt-3">
         <ContactVue text="Telefone" value="+244936269780" class="bg-blue-300" />

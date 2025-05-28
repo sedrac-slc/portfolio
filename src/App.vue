@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import LeftSidebar from './components/LeftSidebar.vue';
+import SelectLang from './components/SelectLang.vue';
 import SelectThema from './components/SelectThema.vue';
 import AcademicTab from './components/tabs/AcademicTab.vue';
 import CareerTab from './components/tabs/CareerTab.vue';
@@ -11,7 +12,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 <template>
   <!-- :style="{'--sidebar-width': '350px',}" -->
-  <nav class="bg-green-300 dark:bg-slate-700 md:bg-transparent md:absolute md:right-2 top-3 p-2">
+  <nav class="bg-green-300 dark:bg-slate-700 dark:rounded-xl md:bg-transparent md:absolute md:right-2 top-3 p-2 flex gap-4 items-center">
+    <SelectLang/>
     <SelectThema />
   </nav>
   <SidebarProvider class="dark:bg-gray-900" :style="{ '--sidebar-width': '355px', }">
