@@ -11,7 +11,7 @@ const props = defineProps({
 <template>
     <div class="space-y-1">
         <div class="flex justify-between">
-            <div :class="{'flex gap-1 items-center gap-3': props.img}">
+            <div :class="{'flex gap-1 items-center': props.img}">
                 <div>
                     <img :src="props.img" alt="img" v-if="props.img"/>
                 </div>
