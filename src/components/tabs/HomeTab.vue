@@ -8,11 +8,11 @@ import ContactVue from '../ContactVue.vue';
 </script>
 <template>
   <section class="flex flex-col md:flex-row items-center w-full gap-2 md:gap-10">
-    <div class="w-3/5 rounded-2xl p-6 pt-0 flex flex-col gap-2 items-center justify-center">
-      <div class="text-4xl font-bold text-center">
+    <div class="mt-4 md:mt-0 md:w-3/5 rounded-2xl p-6 pt-0 flex flex-col gap-2 items-center justify-center">
+      <div class="text-2xl md:text-4xl font-bold text-center">
         Sedrac Lucas Calupeteca
       </div>
-      <div class="mt-3 md:mt-6 text-lg md:indent-10 text-center">
+      <div class="w-full mt-3 md:mt-6 text-lg md:indent-10 md:text-center">
         Sou desenvolvedor fullstack com mais de seis anos de experiência em ambientes corporativos e projetos como
         freelancer de forma profissional criando software para web, mobile e desktop com diversas linguagens e
         frameworks.
@@ -27,7 +27,7 @@ import ContactVue from '../ContactVue.vue';
       </div>
     </div>
     <div>
-      <DotLottieVue style="height: 500px; width: 500px" autoplay loop src="/developer.lottie" />
+      <DotLottieVue class="md:w-[500px] md:h-[500px]" autoplay loop src="/developer.lottie" />
     </div>
   </section>
 

@@ -33,7 +33,7 @@ const contestAOCP = [
                 são formados equipas para representa a instituições em concursos provincial e nacional.
             </ContainerTileItem>
             <div class="flex flex-wrap justify-center items-center gap-3 mt-3 md:gap-8 md:mt-8">
-                <div :class="['min-w-[250px] p-2 md:px-4 rounded-2xl dark:text-black', item.class]"
+                <div :class="['min-w-max md:min-w-[250px] p-2 md:px-4 rounded-2xl dark:text-black', item.class]"
                     v-for="item in contestUKB">
                     <div class="text-center font-semibold mb-3">{{ item.name }}</div>
                     <div class="space-y-1.5">
@@ -44,23 +44,25 @@ const contestAOCP = [
                 </div>
             </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center mb-10 md:mb-0">
             <DotLottieVue style="height: 500px; width: 500px" autoplay loop src="/winner.lottie" />
-            <div class="ml-0 pl-0 self-start">
-                <Carousel class="relative w-full md:-mt-10 " :opts="{ align: 'start', }">
-                    <CarouselContent>
-                        <CarouselItem v-for="item in imgsUKB" :key="item" class="md:basis-1/2 lg:basis-1/3">
+            <div class="ml-0 pl-0 w-full flex justify-center md:self-start">
+                <Carousel class="relative md:w-full md:-mt-10" :opts="{ align: 'start', }">
+                    <CarouselContent class="flex gap-2">
+                        <CarouselItem v-for="item in imgsUKB" :key="item" class="basis-1/3 md:basis-1/2 lg:basis-1/3">
                             <div class="p-0 cursor-pointer" v-viewer>
                                 <img :src="item" alt="Image" class="w-35 h-35 rounded-2xl border border-gray-800" />
                             </div>
                         </CarouselItem>
+                        <CarouselPrevious class="hidden md:block"/>
+                        <CarouselNext class="hidden md:block"/>
                     </CarouselContent>
                 </Carousel>
             </div>
         </div>
     </section>
 
-    <section class="flex flex-col-reverse gap-3 md:gap-8 md:flex-row justify-center items-center my-4 md:my-10">
+    <section class="flex flex-col-reverse gap-3 w-full md:gap-8 md:flex-row justify-center items-center my-4 md:my-10">
         <div>
             <DotLottieVue style="height: 500px; width: 500px" autoplay loop src="/science.lottie" />
         </div>
@@ -86,20 +88,17 @@ const contestAOCP = [
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center gap-5">
-        <div class="flex flex-col md:flex-row gap-2 md:gap-10 items-center">
-            <div>
+    <section class="flex flex-col items-center justify-center md:gap-10">
+        <div class="flex flex-col justify-center md:flex-row gap-2 md:gap-10 items-center">
+            <div class="w-5/6 p-2 md:w-full md:p-0">
                 <ContainerTileItem class="text-center" title="Concurso Nacional de programação (AOCPC)">
                     AOCPC o concurso nacional de programação que um programa da organização ICPC que realizam concursos
-                    de
-                    programação na entre as universidades de um determinado território começando do local (na própria
-                    instituição),
-                    nacional (entre a universidades de um país), internacional (representação de várias universidade em
-                    todo
-                    mundo).
+                    de programação na entre as universidades de um determinado território começando do local (na própria
+                    instituição), nacional (entre a universidades de um país), internacional (representação de várias universidade em
+                    todo mundo).
                 </ContainerTileItem>
                 <div class="flex flex-wrap justify-center items-center gap-3 mt-3 md:gap-8 md:mt-8">
-                    <div :class="['min-w-[250px] p-2 md:px-4 rounded-2xl dark:text-black', item.class]"
+                    <div :class="['min-w-full md:min-w-[250px] p-2 md:px-4 rounded-2xl dark:text-black', item.class]"
                         v-for="item in contestAOCP">
                         <div class="text-center font-semibold mb-3">{{ item.name }}</div>
                         <div class="space-y-1.5">
@@ -115,9 +114,9 @@ const contestAOCP = [
             </div>
         </div>
         <div>
-            <Carousel class="relative w-full md:-mt-10 " :opts="{ align: 'start', }">
+            <Carousel class="relative w-full" :opts="{ align: 'start', }">
                 <CarouselContent>
-                    <CarouselItem v-for="item in imgsAOCP" :key="item" class="md:basis-1/2 lg:basis-1/4">
+                    <CarouselItem v-for="item in imgsAOCP" :key="item" class="basis-1/2 md:basis-1/2 lg:basis-1/4">
                         <div class="p-0 cursor-pointer" v-viewer>
                             <img :src="item" alt="Image" class="w-45 h-45 rounded-2xl border border-gray-800" />
                         </div>

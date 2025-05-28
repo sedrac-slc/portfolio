@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+
 import VueViewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
 import './style.css'
