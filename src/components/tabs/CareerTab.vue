@@ -91,7 +91,7 @@ const contestAOCP = [
 
     <section class="flex flex-col w-full items-center justify-center md:gap-10 px-0 mx-0">
         <div class="flex flex-col justify-center md:flex-row gap-2 md:gap-10 items-center">
-            <div class="w-80">
+            <div class="w-80 md:w-auto">
                 <ContainerTileItem class="text-center" title="Concurso Nacional de programação (AOCPC)">
                     AOCPC o concurso nacional de programação que um programa da organização ICPC que realizam concursos
                     de programação na entre as universidades de um determinado território começando do local (na própria
