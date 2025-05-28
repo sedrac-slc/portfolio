@@ -9,20 +9,24 @@ import TextInfo from '../TextInfo.vue';
 import ContainerTileItem from '../ContainerTileItem.vue';
 import { DotLottieVue } from '@lottiefiles/dotlottie-vue';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
+
+const { t } = useI18n();
 
 const imgsUKB = ["/ukb-ip/img1.jpeg", "/ukb-ip/img2.jpeg", "/ukb-ip/img3.jpeg"];
-const contestUKB = [
-    { name: "III Edição campeonato de programação", group: "Lambda", year: "2017", position: "-", class: "bg-red-300" },
-    { name: "IV Edição campeonato de programação", group: "XZ", year: "2018", position: "1º lugar", class: "bg-green-300" },
-    { name: "V Edição campeonato de programação", group: "XZ", year: "2019", position: "1º lugar", class: "bg-blue-300" },
-];
+const contestUKB =  computed(() => [
+    { name: t('careerTab.iiiProgrammingChampionship'), group: "Lambda", year: "2017", position: "-", class: "bg-red-300" },
+    { name: t('careerTab.ivProgrammingChampionship'), group: "XZ", year: "2018", position: t('careerTab.iStPlace'), class: "bg-green-300" },
+    { name: t('careerTab.vProgrammingChampionship'), group: "XZ", year: "2019", position: t('careerTab.iStPlace'), class: "bg-blue-300" },
+]);
 
 const imgsAOCP = ["/aocpc/img1.jpeg", "/aocpc/img2.jpeg", "/aocpc/img3.jpeg", "/aocpc/img4.jpeg", "/aocpc/img5.jpeg"];
-const contestAOCP = [
-    { name: "AOCPC 2019", group: "-", position: "14º lugar", class: "bg-red-300" },
-    { name: "AOCPC 2020", group: "IP/UKB_01", position: "7º lugar", class: "bg-green-300" },
-    { name: "AOCPC 2021-2022", group: "Sparta", position: "7º lugar", class: "bg-blue-300" },
-];
+const contestAOCP =  computed(() => [
+    { name: "AOCPC 2019", group: "-", position: t('careerTab.xivStPlace'), class: "bg-red-300" },
+    { name: "AOCPC 2020", group: "IP/UKB_01", position: t('careerTab.viiiStPlace'), class: "bg-green-300" },
+    { name: "AOCPC 2021-2022", group: "Sparta", position: t('careerTab.viiiStPlace'), class: "bg-blue-300" },
+]);
 
 </script>
 <template>

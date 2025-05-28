@@ -61,6 +61,14 @@ const lang = {
         professionalTechnicalEducation: "Professional technical education",
         professionalTechnicalEducationDesc: "I took some professional courses with the aim of acquiring specific technical knowledge in the area in which I wanted to work, with a view to both personal improvement and preparation for the job market.",
         professionalTechnicalCourse: "Professional technical course"
+    },
+    careerTab: {
+        iiiProgrammingChampionship: "3rd programming championship",
+        ivProgrammingChampionship: "4rd programming championship",
+        vProgrammingChampionship: "5rd programming championship",
+        xivStPlace: "14th place",
+        viiiStPlace: "7st place",
+        iStPlace: "1st place"
     }
 };
 

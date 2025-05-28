@@ -61,6 +61,14 @@ const lang = {
         professionalTechnicalEducation: "Ensino técnico profissional",
         professionalTechnicalEducationDesc: "Realizei alguns cursos profissionais com o objetivo de adquirir conhecimentos técnicos específicos na área em que desejava atuar, visando tanto o aprimoramento pessoal quanto a preparação para o mercado de trabalho",
         professionalTechnicalCourse: "Curso Técnico profissional"
+    },
+    careerTab: {
+        iiiProgrammingChampionship: "3º campeonato de programação",
+        ivProgrammingChampionship: "4º campeonato de programação",
+        vProgrammingChampionship: "5º programming championship",
+        xivStPlace: "14º lugar",
+        viiiStPlace: "7º lugar",
+        iStPlace: "1º lugar"
     }
 };
 
