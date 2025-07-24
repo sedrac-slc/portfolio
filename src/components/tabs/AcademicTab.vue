@@ -44,7 +44,7 @@ const items = computed(() => [
                             <TextInfo :text="$t('academicTab.institution')" :value="$t('academicTab.institutionDesc')" />
                             <TextInfo :text="$t('academicTab.country')" :value="$t('academicTab.countryDesc')" />
                             <TextInfo :text="$t('academicTab.period')" :value="$t('academicTab.periodDesc')" />
-                            <TextInfo :text="$t('academicTab.province')" :value="$t('academicTab.provinceDesc')" />
+                            <TextInfo :text="$t('academicTab.province')" :value="$t('academicTab.provinceLuanda')" />
                             <TextInfo :text="$t('academicTab.municipality')" :value="$t('academicTab.municipalityDesc')" />
                         </div>
                     </CardContent>
@@ -73,7 +73,7 @@ const items = computed(() => [
                             <TextInfo :text="$t('academicTab.course')" :value="item.course" />
                             <TextInfo :text="$t('academicTab.period')" :value="item.period" />
                             <TextInfo :text="$t('academicTab.country')" :value="$t('academicTab.countryDesc')" />
-                            <TextInfo :text="$t('academicTab.province')" :value="$t('academicTab.provinceDesc')" />
+                            <TextInfo :text="$t('academicTab.province')" :value="$t('academicTab.provinceLuanda')" />
                         </div>
                     </CardContent>
                 </Card>

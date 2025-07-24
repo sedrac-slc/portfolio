@@ -53,7 +53,8 @@ const lang = {
         period: "Periódo",
         periodDesc: "2017 à 2023",
         province: "Provívncia",
-        provinceDesc: "Benguela",
+        provinceBenguela: "Benguela",
+        provinceLuanda: "Luanda",
         municipality: "Município",
         municipalityDesc: "Benguela",
         warning: "Aviso",
@@ -69,6 +70,14 @@ const lang = {
         xivStPlace: "14º lugar",
         viiiStPlace: "7º lugar",
         iStPlace: "1º lugar"
+    },
+    productTab: {
+        negocarName: "Negocar",
+        negocarDesc: "Aplicativo móvel, para encontra profissionais, empresas para realização de serviços de manutênção do seu carro",
+        hinarioName: "Hinário IECA",
+        hinariDesc: "Aplicativo móvel, é o hinário completo da igreja IECA, ode podes encontrar litanias, salmos responsivos e hinos, em Português, Umbumdu, kibumdu, Ngangela, Cokwe, Fiote, Kikongo e Kwanyama",
+        tubkabirName: "Tubkabir",
+        tubkabirDesc: "Aplicativo móvel, para localização e comparação dos preços de produto",
     }
 };
 

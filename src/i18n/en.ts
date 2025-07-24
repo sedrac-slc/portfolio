@@ -53,7 +53,8 @@ const lang = {
         period: "Period",
         periodDesc: "2017 to 2023",
         province: "Province",
-        provinceDesc: "Benguela",
+        provinceBenguela: "Benguela",
+        provinceLuanda: "Luanda",
         municipality: "Municipality",
         municipalityDesc: "Benguela",
         warning: "Warning",
@@ -69,7 +70,15 @@ const lang = {
         xivStPlace: "14th place",
         viiiStPlace: "7st place",
         iStPlace: "1st place"
-    }
+    },
+    productTab: {
+        negocarName: "Negocar",
+        negocarDesc: "Mobile application, to find professionals, companies to perform maintenance services on your car",
+        hinarioName: "Hinário IECA",
+        hinariDesc: "Mobile application, is the complete hymnal of the IECA church, where you can find litanies, responsive psalms and hymns, in Portuguese, Umbumdu, kibumdu, Ngangela, Cokwe, Fiote, Kikongo and Kwanyama",
+        tubkabirName:"Tubkabir",
+        tubkabirDesc:"Mobile application, for locating and comparing product prices",
+    }    
 };
 
 export default lang;
